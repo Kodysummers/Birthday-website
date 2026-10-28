@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f6fc"><meta name="robots" content="noindex,nofollow">
+  <title>For Eden, with love</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script><script src="script.js" defer></script>
+</head>
+<body>
+  <div id="welcome" class="welcome">
+    <h1>For <span data-name>Eden</span>,<br><em>with love.</em></h1>
+    <button id="envelope" class="envelope" aria-label="Open your birthday letter">
+      <span class="paper-peek" aria-hidden="true">♡</span>
+      <span class="pocket" aria-hidden="true"></span><span class="flap" aria-hidden="true"></span>
+      <span class="seal" aria-hidden="true">♥</span><span class="address" aria-hidden="true">To <span data-name>Eden</span></span>
+    </button>
+    <p class="opening-hint">Tap the heart to open your letter</p>
+  </div>
+  <main id="gift" hidden>
+    <nav aria-label="Sections"><a class="brand" href="#letter">For <span data-name>Eden</span> ♡</a><div><a href="#love">Love notes</a><a href="#scrapbook">Scrapbook</a></div></nav>
+    <section id="letter" class="letter-section">
+      <p class="eyebrow">OCTOBER 28, 2026 · YOUR 20TH BIRTHDAY</p>
+      <h2 id="birthday-heading" tabindex="-1"><em>For you.</em></h2>
+      <article class="letter-paper"><span class="letter-heart" aria-hidden="true">♡</span><p id="salutation"></p><div id="letter-body"></div><img id="letter-photo" hidden alt=""><p class="signoff" id="signoff"></p></article>
+    </section>
+    <section id="love" class="love-section">
+      <div class="section-heading"><h2>Things I love<br><em>about you.</em></h2><p>Tap a heart.</p></div>
+      <div id="love-notes" class="love-grid"></div>
+    </section>
+    <section id="scrapbook" class="scrapbook-section">
+      <div class="section-heading"><h2>Our <em>scrapbook.</em></h2></div>
+      <div id="memories" class="scrapbook-grid"></div>
+    </section>
+    <footer><span aria-hidden="true">♡</span><button id="replay" class="text-link">Back to your envelope ↗</button></footer>
+  </main>
+  <dialog id="memory-dialog" aria-label="Scrapbook photo"><button id="close-dialog" class="close-button" aria-label="Close photo">×</button><img id="memory-image" alt=""></dialog>
+  <noscript><p class="no-script">Please enable JavaScript to open this birthday gift.</p></noscript>
+</body>
+</html>

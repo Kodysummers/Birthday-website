@@ -1,0 +1,3 @@
+Put your .jpg, .png, or .webp photographs here.
+Use simple filenames such as first-date.jpg, then reference photos/first-date.jpg in content.js.
+Convert iPhone HEIC photographs to JPEG first.
